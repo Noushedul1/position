@@ -1,0 +1,51 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/* Start for relative */
+.position{
+	background: orange;
+}
+.position1{
+	width: 100px;
+	background: green;
+	border: 2px solid black;
+	position: relative;
+	top: 20px;
+	left: 50px;
+}
+/* end for relative */
+
+/* Start for absolute */
+.position2{
+	background: orange;
+}
+.position3{
+	border: 2px solid black;
+	width: 100px;
+	background: red;
+	position: absolute;
+	/* here absolute changes based on top of the screen */
+	top: 100px;
+	left: 200px;
+}
+/* End for relative */
+
+/* Start for exercise */
+.parent{
+	color: tomato;
+	margin-top: 200px;
+	position: relative;
+}
+.child{
+	background: orange;
+	border: 2px solid black;
+	width: 100px;
+	height: 150px;
+	position: absolute;
+	/* here child changes respect to parent although i put position absolute of the child class.
+	Because i declare parent class as a position relative, now child changes all the time respeft to parent class. */
+	left: 100px;
+}
+/* End for exercise */
